@@ -9,4 +9,49 @@ Dalam menggunakan Git sebagai alat untuk berkolaborasi bersama programmer lain, 
 ### Membuat Branch Pribadi Kamu
 
 Untuk membuat branch baru dengan nama menambahkan-readme, masukkan perintah dibawah ini:
+
 | git branch menambahkan-readme |
+
+
+Kita dapat pindah ke branch baru dengan menggunakan perintah checkout. Perintah ini merupakan perintah untuk melakukan perpindahan pada setiap branch yang ada.
+
+| git checkout menambahkan-readme |
+
+
+Membuat file baru 
+
+| touch NAMA_FILE | 
+
+
+Commit perubahan tersebut dengan perintah commit, contohnya seperti ini: 
+
+| git add .
+
+  git commit -m "menambahkan file readme" |
+  
+
+Selesaikan semua perubahan dengan melakukan push ke remote repository, masukkan perintah dibawah ini:
+
+| git push --set-upstream origin menambahkan-readme |
+
+
+###  Mengambil Perubahan dari Remote Repository
+
+Buka terminal dan ketikkan perintah berikut ini untuk berpindah ke branch utama:
+
+| git checkout main |
+
+
+Selanjutnya, ambil perubahan dari remote menggunakan perintah ini:
+
+| git pull |
+
+Hapus branch bernama menambahkan-readme dengan perintah berikut:
+
+| git branch --delete menambahkan-readme |
+
+atau versi lebih singkatnya:
+
+| git branch -d menambahkan-readme |
+
+
